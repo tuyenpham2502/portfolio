@@ -61,7 +61,7 @@ export default function Footer() {
       try {
         const apiKey =
           process.env.NEXT_PUBLIC_WEATHERAPI_KEY ||
-          'd2381cc6d5394da4bd960404242509';
+          '';
         const response = await axios.get(
           `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Hanoi`
         );
@@ -87,7 +87,7 @@ export default function Footer() {
         const response = await axios.get<SessionResponse>(
           '/api/analytics?type=sessions&pageSize=1'
         );
-
+        console.log('Session data:', response.data);
         if (
           response.status === 200 &&
           response.data &&
