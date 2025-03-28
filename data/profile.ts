@@ -1,5 +1,3 @@
-import { title } from "node:process";
-
 const profile = {
     email: 'tuyenpham250203@gmail.com',
     fullName: 'Tuyen Pham Ngoc',
@@ -19,5 +17,11 @@ const profile = {
             duration: 'Aug 2022 - Present',
         },
     ],
+    github: 'https://github.com/tuyenpham2502',
+    linkedin: 'https://www.linkedin.com/in/tuyenpham2502/',
+    instagram: 'hhttps://www.instagram.com/tuyenpham250203/',
+    analytics: 'https://cloud.umami.is/share/taKyfjYG5OgbvGZE/tuyenpham.online',
+    dailyDev: 'https://app.daily.dev/tuyenpham',
+
 };
 export default profile;

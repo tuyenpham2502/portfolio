@@ -54,6 +54,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -74,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${karla.className} ${geist.variable} ${lifeofapple.variable} ${ridemybike.variable} bg-white text-black dark:bg-neutral-900 dark:text-white antialiased`}
       >
         <SessionProvider>
-          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Container>
               <Toaster position="top-center" reverseOrder={false} />
               <Navbar />

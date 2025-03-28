@@ -22,6 +22,7 @@ import {
 } from 'react-icons/hi';
 import { FeedbackFish } from '@feedback-fish/react';
 import Image from 'next/image';
+import profile from '@/data/profile';
 
 type SessionData = {
   id: string;
@@ -238,7 +239,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://manish-analytics.vercel.app/share/jFK5VpX2c6h2JgRg/www.manishtamang.com"
+                  href={profile.analytics}
                   className="text-gray-600 dark:text-gray-400 hover:text-[#38A662] dark:hover:text-[#38A662] flex items-center transition-colors duration-200"
                 >
                   <SiSimpleanalytics className="mr-2 h-4 w-4" aria-hidden="true" />
@@ -251,7 +252,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://www.instagram.com/codewithmanish_/"
+                  href={profile.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-[#38A662] dark:hover:text-[#38A662] flex items-center transition-colors duration-200"
@@ -262,7 +263,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://app.daily.dev/manishtamang"
+                  href={profile.dailyDev}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-[#38A662] dark:hover:text-[#38A662] flex items-center transition-colors duration-200"
@@ -273,7 +274,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/Manish-Tamang"
+                  href={profile.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-[#38A662] dark:hover:text-[#38A662] flex items-center transition-colors duration-200"
@@ -284,7 +285,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/manish-tamang/"
+                  href={profile.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-[#38A662] dark:hover:text-[#38A662] flex items-center transition-colors duration-200"
@@ -298,7 +299,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center justify-between pt-6 border-t border-gray-200 dark:border-gray-700 sm:flex-row">
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 sm:mb-0">
-            © {currentYear} Manish Tamang. All rights reserved.
+            © {currentYear} Tuyen Pham. All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
             {lastVisit && (
