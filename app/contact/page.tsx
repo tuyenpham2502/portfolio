@@ -48,7 +48,7 @@ const ContactPage: React.FC = () => {
         const fetchNepalTime = async () => {
             try {
                 const response = await fetch(
-                    `https://api.timezonedb.com/v2.1/get-time-zone?key=${process.env.NEXT_PUBLIC_TIMEZONEDB_API_KEY}&format=json&by=zone&zone=Asia/Kathmandu`
+                    `https://api.timezonedb.com/v2.1/get-time-zone?key=${process.env.NEXT_PUBLIC_TIMEZONEDB_API_KEY}&format=json&by=zone&zone=Asia/Ho_Chi_Minh`
                 );
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -108,11 +108,11 @@ const ContactPage: React.FC = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        if (!turnstileToken) {
-            toast.error("Please complete the human verification.");
-            setIsSubmitting(false);
-            return;
-        }
+        // if (!turnstileToken) {
+        //     toast.error("Please complete the human verification.");
+        //     setIsSubmitting(false);
+        //     return;
+        // }
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
@@ -193,7 +193,7 @@ const ContactPage: React.FC = () => {
                 ) : (
                     <span className="inline-block w-16 h-4 bg-gray-200 dark:bg-neutral-700 rounded animate-pulse"></span>
                 )}{" "}
-                in <strong>Nepal</strong> and {getAvailabilityMessage()}. Feel free to send me a message, I
+                in <strong>{profile.address}</strong> and {getAvailabilityMessage()}. Feel free to send me a message, I
                 will get back to you as soon as possible.
             </p>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -305,7 +305,7 @@ const ContactPage: React.FC = () => {
 
                 <button
                     type="submit"
-                    disabled={isSubmitting || !turnstileToken}
+                    // disabled={isSubmitting || !turnstileToken}
                     className="cursor-pointer transition-all bg-[#38A662] text-white px-6 py-2 rounded-[4px] border-[#2D8A4D] w-full border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] disabled:bg-gray-400 disabled:border-gray-500 disabled:cursor-not-allowed"
                 >
                     {isSubmitting ? (

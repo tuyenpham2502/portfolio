@@ -1,8 +1,11 @@
+import { add } from "date-fns";
+
 const profile = {
     email: 'tuyenpham250203@gmail.com',
     fullName: 'Tuyen Pham Ngoc',
     title: 'Web Developer',
     title2: 'Student',
+    address: 'Hanoi, Vietnam',
     fistName: 'Tuyen',
     middleName: 'Pham',
     lastName: 'Ngoc',
