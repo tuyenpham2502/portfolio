@@ -60,17 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="description" content={metadata.description ?? ''} />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <Script
-          src="https://manish-analytics.vercel.app/script.js"
-          data-website-id="d5fd3d82-d867-4e3d-badb-837ad2ff7f7d"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="https://cloud.umami.is/script.js"
-          data-website-id="87f8f3a2-7fad-4aed-b92d-5beeee4c4491"
-          strategy="afterInteractive"
-        />
-      </head>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="8ef79fa3-242d-4d27-a8d6-0a567844c24a"></script>      </head>
       <body
         className={`${karla.className} ${geist.variable} ${lifeofapple.variable} ${ridemybike.variable} bg-white text-black dark:bg-neutral-900 dark:text-white antialiased`}
       >
