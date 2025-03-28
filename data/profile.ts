@@ -17,6 +17,7 @@ const profile = {
             duration: 'Aug 2022 - Present',
         },
     ],
+    facebook: 'https://www.facebook.com/tuyenpham250203',
     github: 'https://github.com/tuyenpham2502',
     linkedin: 'https://www.linkedin.com/in/tuyenpham2502/',
     instagram: 'hhttps://www.instagram.com/tuyenpham250203/',
