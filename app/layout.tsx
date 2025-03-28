@@ -39,16 +39,16 @@ const ridemybike = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Tuyen Pham - A young developer',
+  title: 'Tuyen Pham - Frontend Developer',
   description: `Hi, I'm Tuyen Pham, a ${new Date().getFullYear() - 2003
     }-year-old {developer|designer|student
   } from VietNam, with a fervent passion for web development.`,
   openGraph: {
-    title: 'Tuyen Pham - A young developer',
-    description: `Hi, I'm Manish Gole Tamang, a ${new Date().getFullYear() - 2003
+    title: 'Tuyen Pham - Frontend Developer',
+    description: `Hi, I'm Tuyen Pham, a ${new Date().getFullYear() - 2003
       }-year-old {developer|designer|student
   } from VietNam, with a fervent passion for web development.`,
-    images: '/IMG-20250217-WA0011.jpg',
+    images: '/profile.png',
     type: 'website',
   },
 };
