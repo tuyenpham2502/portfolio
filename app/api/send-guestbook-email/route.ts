@@ -1,3 +1,4 @@
+import profile from "@/data/profile";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -70,10 +71,6 @@ export async function POST(req: NextRequest) {
 </head>
 <body>
     <div class="container">
-        <img src="https://www.manishtamang.com/img/twitter-banner.jpg" 
-             alt="Header Banner" 
-             class="header-img">
-
         <div class="content">
             <div class="message-text">
                 Dear ${userName},
@@ -91,27 +88,21 @@ export async function POST(req: NextRequest) {
 
             <div class="message-text">
                 Happy coding,<br>
-                Manish Tamang<br>
+                Tuyen Pham<br>
                 (This email was automatically sent by Next.js routes after your message triggered the email API.)
             </div>
         </div>
 
         <div class="footer">
-            <strong>Manish Tamang</strong>
+            <strong>Tuyen Pham</strong>
             <div class="social-links" style="margin: 15px 0;">
-                <a href="https://www.linkedin.com/in/manish-tamang/" target="_blank">
+                <a href="${profile.linkedin}" target="_blank">
                     <img src="https://img-cache.net/im/4960397/222244d31eb97bf87c97e39cfae167967c2db928fe79536e6baca38c96337154.png" alt="LinkedIn">
                 </a>
-                <a href="https://www.tiktok.com/@golecodes" target="_blank">
-                    <img src="https://img-cache.net/im/4960397/32fb8fcf2cc04286d7d1556f0f59caa593793220b21086c6f2b55695b579da69.png" alt="TikTok">
-                </a>
-                <a href="https://x.com/Manishtamangxyz" target="_blank">
-                    <img src="https://img-cache.net/im/4960397/5552a635561d4d09365e834d1b5ca6a83228eb2e312512a614332f72fd0ffeb8.png" alt="X">
-                </a>
-                <a href="https://www.facebook.com/manishgoletamang" target="_blank">
+                <a href="${profile.facebook}" target="_blank">
                     <img src="https://img-cache.net/im/4960397/71a0680b06c995e6030190a5c9d1420b7c20f80c36597f2144666c2b62a52d60.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/codewithmanish_/" target="_blank">
+                <a href="${profile.instagram}" target="_blank">
                     <img src="https://img-cache.net/im/4960397/c2c25c4d2076c7f37112ced457f98550565bdfc92294241b91ec5dff5262f4ac.png" alt="Instagram">
                 </a>
             </div>
