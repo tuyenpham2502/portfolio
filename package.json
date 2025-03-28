@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3001",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -59,6 +59,7 @@
     "cmdk": "^1.0.0",
     "codehike": "^1.0.4",
     "date-fns": "^3.6.0",
+    "easymde": "^2.20.0",
     "embla-carousel-react": "^8.3.0",
     "eslint": "8.49.0",
     "eslint-config-next": "^15.1.6",
