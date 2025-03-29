@@ -202,7 +202,7 @@ export default function CarbonAds({ className }: CarbonAdsProps) {
 
         const script = document.createElement('script');
         script.src =
-            'https://cdn.carbonads.com/carbon.js?serve=CW7I6K7U&placement=wwwmanishtamangcom&format=rect';
+            '';
         script.id = '_carbonads_js';
         script.async = true;
         script.defer = true;
