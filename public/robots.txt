@@ -13,8 +13,8 @@ Disallow: /colophon
 Disallow: /contact
 
 # Host
-Host: https://www.manishtamang.com
+Host: tuyenpham.online
 
 # Sitemaps
-Sitemap: https://www.manishtamang.com/sitemap.xml
-Sitemap: undefined/server-sitemap.xml
+Sitemap: tuyenpham.online/sitemap.xml
+Sitemap: tuyenpham.online/server-sitemap.xml
