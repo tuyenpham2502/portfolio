@@ -123,7 +123,7 @@ const ContactPage: React.FC = () => {
                 body: JSON.stringify({
                     ...formData,
                     access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
-                    "cf-turnstile-response": turnstileToken,
+                    "cf-turnstile-response": null,
                 }),
             });
 
