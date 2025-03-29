@@ -7,7 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 const initialImages = [
     {
         id: 1,
-        src: "img/image1.jpg",
+        src: "/img/image1.jpg",
         alt: "Gallery Image 1",
         width: 800,
         height: 600,
