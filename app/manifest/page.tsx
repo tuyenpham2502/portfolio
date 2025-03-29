@@ -13,20 +13,20 @@ interface BucketListItem {
 }
 
 const WishListItems = [
-    { id: 101, title: "Learn Rust", description: "Dive into systems programming." },
-    { id: 102, title: "Contribute to Open Source", description: "Help build great software." },
-    { id: 103, title: "Attend a Tech Conference", description: "Connect with industry peers." },
+    // learning English
+    { id: 0, title: "Learning English", description: "Improve my English skills." },
+    // learning Go
+    { id: 1, title: "Learning Go", description: "Master the Go programming language." },
+    //learning Flutter
+    { id: 3, title: "Learning Flutter", description: "Build beautiful mobile apps with Flutter." },
 ];
 
 const ManifestPage = () => {
     const [bucketList, setBucketList] = useState<BucketListItem[]>([
-        { id: 1, title: "Buy a Gaming PC", completed: false },
-        { id: 2, title: "Buy a Insta360 GO 2", images: ["/img/bucketlist/insta-360-go-2.jpg"], completed: false },
-        { id: 3, title: "Buy a DJI Osmo Pocket 3", images: ["/img/bucketlist/dji.png"], completed: false },
-        { id: 4, title: "Complete MERN Stack", completed: false },
-        { id: 5, title: "Earn NPR 100k", completed: false },
-        { id: 6, title: "Buy a MacBook Air M2", images: ["/img/bucketlist/macbook.jpg",], completed: false },
-        { id: 7, title: "Buy a Nothing Phone 2a", completed: false },
+        { id: 3, title: "Travel to Japan", description: "Explore the culture and cuisine.", completed: false },
+        { id: 4, title: "Start a Blog", description: "Share my thoughts and experiences.", completed: false },
+        { id: 5, title: "Run a Marathon", description: "Challenge myself physically.", completed: false },
+        { id: 6, title: "Volunteer for a Cause", description: "Give back to the community.", completed: false },
     ]);
 
     return (

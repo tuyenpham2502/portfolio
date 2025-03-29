@@ -27,45 +27,15 @@ import {
 export const gearItems = [
   {
     name: "Laptop",
-    description: 'Acer Aspire 3 2024',
+    description: 'Macbook Pro M3 Pro 14"',
     image: "/img/uses/laptop.png",
-    tags: ["Acer", "Laptop", "Windows"],
-  },
-  {
-    name: "Keyboard",
-    description: "Zifriend ZA63 Pro",
-    image: "/img/uses/keyboard.png",
-    tags: ["Mechanical", "Wireless"],
-  },
-  {
-    name: "Mouse",
-    description: "Ajazz AJ179 Apex",
-    image: "/img/uses/mouse.png",
-    tags: ["Ajazz", "Wireless"],
-  },
-  {
-    name: "Microphone",
-    description: "Fantech Leviosa MCX01",
-    image: "/img/uses/mic.png",
-    tags: ["Fantech", "Mic"],
-  },
-  {
-    name: "Charger",
-    description: "UGREEN RG 30W USB C",
-    image: "/img/uses/charger.png",
-    tags: ["Ugreen", "30w"],
+    tags: ["Macbook", "M3 Pro", "14 inch"],
   },
   {
     name: "Phone",
-    description: "Realme C15",
+    description: "Iphone XS Max",
     image: "/img/uses/phone.png",
-    tags: ["Phone", "Android"],
-  },
-  {
-    name: "Airbuds",
-    description: "Realme Buds Air 2 Neo",
-    image: "/img/uses/airbuds.png",
-    tags: ["Realme", "Airbuds"],
+    tags: ["Phone", "IOS"],
   },
 ];
 

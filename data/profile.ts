@@ -24,7 +24,7 @@ const profile = {
     github: 'https://github.com/tuyenpham2502',
     linkedin: 'https://www.linkedin.com/in/tuyenpham2502/',
     instagram: 'hhttps://www.instagram.com/tuyenpham250203/',
-    analytics: 'https://cloud.umami.is/share/taKyfjYG5OgbvGZE/tuyenpham.online',
+    analytics: 'https://cloud.umami.is/share/lphZd4wHNRqgtktA/tuyenpham.online',
     dailyDev: 'https://app.daily.dev/tuyenpham',
 
 };
