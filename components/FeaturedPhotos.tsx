@@ -16,19 +16,19 @@ interface Photo {
 const initialPhotos: Photo[] = [
     {
         id: 7,
-        src: "/img/IMG-20241228-WA0053.jpg",
+        src: "img/image1.jpg",
         alt: "Gallery Image 7",
 
     },
     {
         id: 8,
-        src: "/img/IMG-20250308-WA0021.jpg",
+        src: "/img/image2.jpg",
         alt: "Gallery Image 8",
 
     },
     {
         id: 9,
-        src: "/img/IMG-20250322-WA0081.jpg",
+        src: "/img/image3.jpeg",
         alt: "Gallery Image 9",
 
     },
