@@ -68,12 +68,12 @@ export async function generateMetadata(props: {
     title: post.title,
     description:
       post.excerpt ||
-      `Read more about ${post.title} on Manish Tamang's blog.`,
+      `Read more about ${post.title} on Tuyen Pham's blog.`,
     openGraph: {
       title: post.title,
       description:
         post.excerpt ||
-        `Read more about ${post.title} on Manish Tamang's blog.`,
+        `Read more about ${post.title} on Tuyen Pham's blog.`,
       images: post.coverImage
         ? [urlFor(post.coverImage).url()]
         : ["/profile.png"],
@@ -84,7 +84,7 @@ export async function generateMetadata(props: {
       title: post.title,
       description:
         post.excerpt ||
-        `Read more about ${post.title} on Manish Tamang's blog.`,
+        `Read more about ${post.title} on Tuyen Pham's blog.`,
       images: post.coverImage
         ? [urlFor(post.coverImage).url()]
         : ["/profile.png"],

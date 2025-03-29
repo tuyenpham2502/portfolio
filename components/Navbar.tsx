@@ -172,7 +172,7 @@ export default function Navbar() {
                         <NavigationMenuLink asChild>
                           <BlurFadeImage
                             src="/IMG-20250217-WA0011.jpg"
-                            alt="Manish Tamang in Sushma Godawari Collage"
+                            alt="Tuyen Pham in Sushma Godawari Collage"
                             delay={0.1}
                             className="object-cover w-full h-full"
                             width={800}
