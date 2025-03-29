@@ -4,7 +4,7 @@ import { MDXComponents } from '@/components/mdx/MDXComponents';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
-import { Code, ExternalLink } from 'lucide-react'; 
+import { Code, ExternalLink } from 'lucide-react';
 
 export interface FullProject {
     currentSlug: string;
@@ -15,7 +15,7 @@ export interface FullProject {
     projectUrl?: string;
     githubUrl?: string;
     techStack?: string[];
-    excerpt?: string; 
+    excerpt?: string;
 }
 
 const estimateReadingTime = (content: string): number => {
@@ -72,17 +72,17 @@ export async function generateMetadata({
 
     return {
         title: project.title,
-        description: project.excerpt || `Explore ${project.title} on Manish Tamang's portfolio.`,
+        description: project.excerpt || `Explore ${project.title} on Tuyen Pham's portfolio.`,
         openGraph: {
             title: project.title,
-            description: project.excerpt || `Explore ${project.title} on Manish Tamang's portfolio.`,
+            description: project.excerpt || `Explore ${project.title} on Tuyen Pham's portfolio.`,
             images: project.thumbnail ? [urlFor(project.thumbnail).url()] : ['/profile.png'],
             type: 'article',
         },
         twitter: {
             card: 'summary_large_image',
             title: project.title,
-            description: project.excerpt || `Explore ${project.title} on Manish Tamang's portfolio.`,
+            description: project.excerpt || `Explore ${project.title} on Tuyen Pham's portfolio.`,
             images: project.thumbnail ? [urlFor(project.thumbnail).url()] : ['/profile.png'],
         },
     };
@@ -111,12 +111,12 @@ export default async function ProjectPage({
                 <div className="flex items-center space-x-2">
                     <Image
                         src='/profile.png'
-                        alt="Manish Tamang"
+                        alt="Tuyen Pham"
                         width={30}
                         height={30}
                         className="rounded-full"
                     />
-                    <span className="text-gray-500 text-sm">Manish Tamang</span>
+                    <span className="text-gray-500 text-sm">Tuyen Pham</span>
                 </div>
                 <span className="text-gray-500 text-sm">
                     {formattedDate} - {readingTime} min read

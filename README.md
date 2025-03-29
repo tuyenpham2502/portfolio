@@ -1,6 +1,6 @@
-# Manish Tamang - Personal Portfolio
+# Tuyen Pham - Personal Portfolio
 
-[![Website](https://img.shields.io/badge/Visit%20Website-brightgreen)](https://manishtamang.com)
+[![Website](https://img.shields.io/badge/Visit%20Website-brightgreen)](https://tuyenpham.online)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&style=flat-square)](https://nextjs.org/)
 [![Sanity](https://img.shields.io/badge/Sanity-black?logo=sanity&style=flat-square)](https://www.sanity.io/)
@@ -35,6 +35,8 @@ Welcome to my personal portfolio website, a showcase of my professional journey,
 - **Responsive Dark/Light Themes**
 - **MDX-Powered Blog Posts:** Rich, interactive content
 - **SEO Optimized:** Enhanced search engine visibility
+- **Contact Form:** Web3Forms integration with Cloudflare Turnstile protection
+- **Email Notifications:** Automated email system using NodeMailer
 
 ## 🚀 Technologies
 
@@ -44,6 +46,9 @@ Welcome to my personal portfolio website, a showcase of my professional journey,
 - **Content Management:** Sanity CMS
 - **Authentication:** NextAuth.js, Firebase
 - **Deployment:** Vercel
+- **Form Handling:** Web3Forms
+- **Security:** Cloudflare Turnstile
+- **Email Service:** NodeMailer
 - **Additional Libraries:**
   - Framer Motion
   - Recharts
@@ -60,13 +65,15 @@ Welcome to my personal portfolio website, a showcase of my professional journey,
 - Firebase Project
 - Spotify Developer Account
 - WakaTime Account
+- Google OAuth Credentials
+- GitHub OAuth Credentials
 
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Manish-Tamang/portfolio.git
+   git clone https://github.com/tuyen-pham/portfolio.git
    cd portfolio
    ```
 
@@ -80,6 +87,9 @@ Welcome to my personal portfolio website, a showcase of my professional journey,
 Create a `.env.local` file with the following variables:
 
 ```bash
+# Site Configuration
+NEXT_PUBLIC_SITE_URL=
+
 # Sanity Configuration
 NEXT_PUBLIC_SANITY_PROJECT_ID=
 NEXT_PUBLIC_SANITY_DATASET=production
@@ -88,7 +98,10 @@ SANITY_API_READ_TOKEN=
 # Firebase Configuration
 NEXT_PUBLIC_FIREBASE_API_KEY=
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
-# ... (other Firebase configs)
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
 
 # Spotify Integration
 SPOTIFY_CLIENT_ID=
@@ -101,11 +114,33 @@ WAKATIME_CLIENT_ID=
 
 # Authentication
 NEXTAUTH_SECRET=
-NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL=
+
+# Google OAuth
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+# Github OAuth
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
 
 # Analytics
 UMAMI_API_KEY=
 WEBSITE_ID=
+
+# Web3Forms
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=
+
+# Cloudflare Turnstile
+NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY=
+
+# NodeMailer
+GMAIL_USER=
+GMAIL_PASS=
+NEXT_PUBLIC_ADMIN_EMAIL=
+
+# Timezone
+NEXT_PUBLIC_TIMEZONEDB_API_KEY=
 ```
 
 ### Running the Project
@@ -120,13 +155,23 @@ Visit `http://localhost:3000` in your browser.
 
 ```
 portfolio/
-├── app/             # Next.js app directory
-├── components/      # Reusable React components
-├── lib/             # Utility functions
-├── public/          # Static assets
-├── sanity/          # Sanity CMS configuration
-├── styles/          # Global and module CSS
-└── types/           # TypeScript type definitions
+├── app/                    # Next.js app directory with route handlers
+│   ├── api/               # API routes
+│   ├── blog/              # Blog pages
+│   ├── projects/          # Projects pages
+│   ├── about/             # About page
+│   └── studio/           # Sanity Studio
+├── components/            # Reusable React components
+│   ├── ui/               # UI components
+│   ├── dashboard/        # Dashboard components
+│   ├── dock/             # Dock components
+│   └── mdx/              # MDX components
+├── lib/                  # Utility functions
+├── public/              # Static assets
+├── sanity/             # Sanity CMS configuration
+├── styles/             # Global and module CSS
+├── firebase/           # Firebase configuration
+└── hooks/              # Custom React hooks
 ```
 
 ## 🔗 Integrations
@@ -138,7 +183,6 @@ Manage content through `/studio` route. Configure CORS settings in Sanity manage
 ### Firebase
 
 Handles:
-
 - View counting
 - User authentication
 - Guestbook messages
@@ -146,6 +190,10 @@ Handles:
 ### Spotify & WakaTime
 
 Real-time tracking of music and coding activities.
+
+### Web3Forms & NodeMailer
+
+Handles contact form submissions and email notifications.
 
 ## 🤝 Contributing
 

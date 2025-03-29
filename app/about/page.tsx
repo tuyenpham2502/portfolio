@@ -48,7 +48,7 @@ const About = () => {
                                         <div className="flex flex-row justify-between opacity-90">
                                             <Image
                                                 src="/IMG-20250217-WA0011.jpg"
-                                                alt="Manish Tamang"
+                                                alt="Tuyen Pham"
                                                 width={200}
                                                 height={200}
                                                 className="w-full h-full"
