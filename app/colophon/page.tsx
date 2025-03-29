@@ -103,7 +103,7 @@ const ColophonPage = () => {
                     </div>
                 </div>
                 <p className="text-gray-700 dark:text-gray-300 mt-4">
-                    I purchased my domain <span className="font-medium">manishtamang.com</span> for this site from{" "}
+                    I purchased my domain <span className="font-medium">tuyenpham.online</span> for this site from{" "}
                     <Link href="https://www.bisup.com/" className="font-medium text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
                         Bisup
                     </Link>, and the site is deployed on{" "}

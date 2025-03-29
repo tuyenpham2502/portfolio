@@ -62,7 +62,7 @@ const response = <T>(
 export async function GET(): Promise<NextResponse> {
   try {
     const GITHUB_API_URL = "https://api.github.com";
-    const GITHUB_USERNAME = "Manish-Tamang";
+    const GITHUB_USERNAME = "TuyenPham";
 
     const githubUserResponse = await fetch(
       `${GITHUB_API_URL}/users/${GITHUB_USERNAME}`,
@@ -70,7 +70,7 @@ export async function GET(): Promise<NextResponse> {
         headers: {
           Authorization: `Bearer ${getEnv("GITHUB_READ_USER_TOKEN_PERSONAL")}`,
           "Content-Type": "application/json",
-          "User-Agent": "manishtamang.com",
+          "User-Agent": "TuyenPham.com",
         },
       }
     );
