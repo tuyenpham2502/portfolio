@@ -60,7 +60,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="description" content={metadata.description ?? ''} />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <script defer src="https://cloud.umami.is/script.js" data-website-id="8ef79fa3-242d-4d27-a8d6-0a567844c24a"></script>      </head>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="8ef79fa3-242d-4d27-a8d6-0a567844c24a"></script>
+      </head>
       <body
         className={`${karla.className} ${geist.variable} ${lifeofapple.variable} ${ridemybike.variable} bg-white text-black dark:bg-neutral-900 dark:text-white antialiased`}
       >

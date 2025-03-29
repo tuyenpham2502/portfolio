@@ -12,5 +12,5 @@ export default defineCliConfig({
     projectId,
     dataset,
   },
-  studioHost: "manishtamang",
+  studioHost: "tuyenpham",
 });
