@@ -29,41 +29,15 @@ const Education = () => {
         {
             logo: (
                 <img
-                    src="/img/sushma.jpg"
-                    alt="Sushma Godawari College Logo"
-                    className="w-12 h-12 rounded-full overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-110"
-                />
-            ),
-            institution: "Sushma Godawari College",
-            degree: "+2 Science",
-            dateRange: "JUL 2024 - APR 2026",
-            description: "Currently studying +2 Computer Science at Sushma Godawari College."
-        },
-        {
-            logo: (
-                <img
-                    src="/img/prashanti.jpg"
-                    alt="Prashanti Academy Logo"
-                    className="w-12 h-12 rounded-full overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-110"
-                />
-            ),
-            institution: "Prashanti Academy",
-            degree: "Full-Stack Web Development",
-            dateRange: "JUN 2020 - MAR 2024",
-            description: "Completed my lower and upper secondary school at Prashanti Academy."
-        },
-        {
-            logo: (
-                <img
-                    src="/img/ypointing.jpg"
-                    alt="Y-pointing Sec. Boarding School Logo"
+                    src="/img/kma-logo.jpeg"
+                    alt="Kma logo"
                     className="w-13 h-12 rounded-full overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-110"
                 />
             ),
-            institution: "Y-pointing Sec. Boarding School",
-            degree: "Secondary Education",
-            dateRange: "JUN 2012 - MAR 2020",
-            description: "Completed my primary education at Y-pointing Sec. Boarding School."
+            institution: "Vietnam Academy of Cryptography Techniques",
+            degree: "Engineer in Electronics and Telecommunications",
+            dateRange: "2022 - Present",
+            description: "Specialized in telecommunication systems, embedded systems, and network security. Skilled in circuit design, signal processing, and secure communications."
         }
     ];
 

@@ -21,14 +21,17 @@ export default function ProjectCard({ title, slug, excerpt, thumbnail, date }: P
         <Link href={`/projects/${slug}`} className="group block">
             <div className="relative overflow-hidden rounded-xl bg-white dark:bg-neutral-800 border shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
                 <div className="relative h-64 overflow-hidden">
-                    <BlurFadeImage
-                        src={urlFor(thumbnail).url()}
-                        alt={title}
-                        width={1200}
-                        height={800}
-                        delay={0.1}
-                        className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
-                    />
+                    {
+                        thumbnail && (
+                            <Image
+                                src={urlFor(thumbnail).url()}
+                                alt={title}
+                                width={1200}
+                                height={800}
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                        )
+                    }
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
